@@ -1,0 +1,67 @@
+.calcBody {
+    width: 300px;
+    margin: auto;
+    min-height: 450px;
+    box-shadow: 0 8px 50px -7px black;
+    background-color: #3A4655;
+    margin-top: 80px;
+}
+
+.calcScreen {
+    padding: 20px;
+}
+
+#calcOperation {
+    font-size: 20.8px;
+    text-align: right;
+    color: #727b86;
+    padding-bottom: 8px;
+}
+
+#calcTyped {
+    font-size: 32px;
+    text-align: right;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.calcBtnRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.initial {
+    display: table;
+
+}
+
+.calcBtnRow button {
+    width: 25%;
+    background: #425062;
+    color: #fff;
+    height: 70px;
+    font-size: 20.8px;
+    border: none;
+    border-color: #3c4857;
+    border-width: 1px 1px 0px 0;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+#ac {
+    color: #ff7665;
+}
+
+button.unique{
+    color:#ffbc56;
+}
+
+
+.calcBtnRow button:active {
+    position: relative;
+    top: 1px;
+}
+
+.calcBtnRow button:hover {
+    background: #3c4857;
+}
