@@ -7,57 +7,56 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<!-- Calc Body -->
+  <!-- Calc Body -->
 
 <div class="calcBody">
-
-<!-- Display screen -->
-    <div class="calcScreen">
-        <div id="calcOperation">1234 + 567 + </div>
-        <div id="calcTyped">890</div>
+   
+   <!-- Display screen -->
+    <div id="input-display" class="calcScreen">
+        <input type="text" id="display" disabled>
     </div>
 
-<!-- Calc Buttons -->
+  <!-- Calc Buttons -->
     <div class="calcBtnRow">
 
             <div class ="initial">
-               <button id="ac">AC</button> 
-               <button class="unique">+/-</button> 
-               <button class="unique">%</button>
-               <button class="unique">/</button>
+               <button onclick="clearDisplay()" id="ac">AC</button> 
+               <button onclick="appendToDisplay('+')" class="unique">+</button> 
+               <button onclick="appendToDisplay('%')" class="unique">%</button>
+               <button onclick="appendToDisplay('/')" class="unique">/</button>
 
             </div>
 
 
             <div class="initial" >
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="unique">X</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')" class="unique">*</button>
             </div>
 
 
             <div class ="initial">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="unique">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')" class="unique">-</button>
             </div>
 
             
             <div class ="initial">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="unique">&#247;</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('.')" class="unique">.</button>
             </div>
             
             
             <div class ="initial">
-                <button>0</button>
-                <button>.</button>
-                <button class="unique">Del</button>
-                <button class="unique">=</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button onclick="deleteLastDigit()" class="unique">Del</button>
+                <button onclick="calculateResult()" class="unique">=</button>
             </div>
 
 
@@ -65,5 +64,9 @@
 
     </div>
 </div>
+
+
+
+<script src="index.js"></script>
 </body>
 </html>

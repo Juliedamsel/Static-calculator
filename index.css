@@ -7,22 +7,27 @@
     margin-top: 80px;
 }
 
-.calcScreen {
+.calcScreen input {
+    border: 0;
+    outline: 0;
+    width: 260px;
+    height: 60px;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
     padding: 20px;
+    background: #3c4857;
 }
 
-#calcOperation {
-    font-size: 20.8px;
-    text-align: right;
-    color: #727b86;
-    padding-bottom: 8px;
+#input-display{
+    display: flex;
+    justify-content: flex-end;
 }
 
-#calcTyped {
-    font-size: 32px;
+#input-display input{
     text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
     color: #fff;
-    padding-bottom: 10px;
 }
 
 .calcBtnRow {
